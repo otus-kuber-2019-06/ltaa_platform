@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: storage-pvc
 spec:
-  storageClassName: csi-storage-hp
+  storageClassName: csi-hostpath-sc
   accessModes:
     - ReadWriteOnce
   volumeMode: Filesystem
