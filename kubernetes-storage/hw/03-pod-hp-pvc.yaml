@@ -4,8 +4,8 @@ metadata:
   name: storage-pod
 spec:
   containers:
-  - name: bash
-    image: bash
+  - name: nginx
+    image: nginx
     volumeMounts:
       - mountPath: /data
         name: hp-pvc
