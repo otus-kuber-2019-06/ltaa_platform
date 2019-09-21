@@ -4,8 +4,8 @@ metadata:
   name: storage-pod
 spec:
   containers:
-  - name: goweb
-    image: ltaa/go-web
+  - name: bash
+    image: bash
     volumeMounts:
       - mountPath: /data
         name: hp-pvc
