@@ -6,7 +6,6 @@ spec:
   storageClassName: csi-hostpath-sc
   accessModes:
     - ReadWriteOnce
-  volumeMode: Filesystem
   resources:
     requests:
-      storage: 2Gi
+      storage: 1Gi
