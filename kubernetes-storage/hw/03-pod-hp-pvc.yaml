@@ -4,11 +4,13 @@ metadata:
   name: storage-pod
 spec:
   containers:
-  - name: nginx
-    image: nginx
+  - name: ubuntu
+    image: ubuntu:18.04
+    command: ["/bin/sh", "-c", "tail -f /dev/null"]
     volumeMounts:
       - mountPath: /data
         name: hp-pvc
+        mountPropagation: "HostToContainer"
   volumes:
   - name:  hp-pvc
     persistentVolumeClaim:
